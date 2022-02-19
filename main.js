@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "https://cdn.skypack.dev/three@r137";
 
 const colors = ["#F7A541", "#F45D4C", "#FA2E59", "#4783c3", "#9c6cb7"];
 const WINDOW_WIDTH = window.innerWidth;
