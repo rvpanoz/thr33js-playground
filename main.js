@@ -1,9 +1,9 @@
-import * as THREE from "https://cdn.skypack.dev/three@r137";
+import * as THREE from "three";
 
 const colors = ["#F7A541", "#F45D4C", "#FA2E59", "#4783c3", "#9c6cb7"];
 const WINDOW_WIDTH = window.innerWidth;
 const WINDOW_HEIGHT = window.innerHeight;
-const TEXT = "GfK :)";
+const TEXT = "hellooo :)";
 
 const mouseVector = new THREE.Vector3(0, 0, 0);
 const mousePos = new THREE.Vector3(0, 0, 0);
