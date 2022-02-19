@@ -1,0 +1,14 @@
+body {
+  overflow: hidden;
+  background: #a1dbb2;
+}
+
+div,
+canvas {
+  position: absolute;
+}
+
+#text {
+  z-index: 200;
+  display: none;
+}
