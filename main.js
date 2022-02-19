@@ -31,7 +31,7 @@ renderer.setClearColor(new THREE.Color(0x000000));
 // Camera
 const fieldOfView = 75;
 const aspectRatio = WINDOW_WIDTH / WINDOW_HEIGHT;
-const nearPlane = 1;
+const nearPlane = 0.1;
 const farPlane = 850;
 
 const camera = new THREE.PerspectiveCamera(
@@ -41,7 +41,7 @@ const camera = new THREE.PerspectiveCamera(
   farPlane
 );
 
-camera.position.z = 1100;
+camera.position.z = 850;
 
 function initStage() {
   window.addEventListener("resize", resize);
@@ -182,7 +182,7 @@ function updateText() {
   const pix = textCtx.getImageData(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT).data;
   textPixels = [];
 
-  for (let i = pix.length; i >= 0; i -= 4) {
+  for (let i = pix.length; i >= 0; i -= 2) {
     if (pix[i] != 0) {
       const x = (i / 4) % WINDOW_WIDTH;
       const y = Math.floor(Math.floor(i / WINDOW_WIDTH) / 4);
